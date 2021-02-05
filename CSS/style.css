@@ -1,0 +1,169 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+/*Navigation Bar Logo and Image */
+#logo{
+    margin: 1px 30px;
+    
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
+    margin: 6px 6px;
+    /* filter: invert(100%); */
+    border-radius: 40px;
+}
+
+
+/* Navigation Bar List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;  
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    text-align: justify;
+}
+/* Services Section */
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    padding:115px 0px;
+    height: 500px;
+    justify-content: center;
+    
+}
+
+#services{
+    margin: 30px;
+    display: flex;
+
+
+}
+#services .box{
+    border: 2px solid red;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 2PX 20PX;
+    margin: 20px;
+    background-color:#312c2b;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: #817673;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
