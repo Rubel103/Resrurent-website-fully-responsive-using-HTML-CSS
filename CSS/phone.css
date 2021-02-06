@@ -1,0 +1,59 @@
+/* Responsive for phone */
+
+
+
+/* Navigation Bar */
+#navbar{
+    flex-direction: column;
+}
+
+
+
+
+/* Home section */
+#home{
+    height: 484px;
+   
+}
+#home::before{
+    height: 400px;
+   
+}
+#home p{
+    font-size: 13px;
+   
+}
+
+
+/* services section */
+#services{
+    flex-direction: column;
+    
+}
+#services .box{
+
+
+}
+
+
+
+/* client section  */
+#clients{
+
+    overflow: hidden;
+}
+
+
+
+
+/* contact us section  */
+
+
+/* footer section  */
+
+
+/* utility classes */
+
+.h-primary{
+    font-size: 25px;
+}
